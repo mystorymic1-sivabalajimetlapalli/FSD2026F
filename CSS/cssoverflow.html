@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS OVER FLOW</title>
+</head>
+<body>
+    <h1>CSS OVER FLOW</h1>
+    <p>CSS overflow property specifies what happens if content overflows an element's box. It can take the following values:</p>
+    <ul>    
+        <li><strong>visible:</strong> The overflow is not clipped. It renders outside the element's box. This is the default value.</li>
+        <li><strong>hidden:</strong> The overflow is clipped, and the rest of the content will be invisible.</li>
+        <li><strong>scroll:</strong> The overflow is clipped, but a scroll-bar is added to see the rest of the content.</li>
+        <li><strong>auto:</strong> If overflow is clipped, a scroll-bar should be added to see the rest of the content.</li>
+    </ul>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #360404;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #ff0000;
+        }
+         ul {
+            color: #0000ff;
+        }
+        </style>
+        <div style="width: 1000px; height: 100px; border: 1px solid black; overflow: hidden; padding: 20px;">
+            This is an example of overflow hidden. The content that exceeds the box will not be visible.
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+        </div>
+         <div style="width: 1000px; height: 100px; border: 1px solid black; overflow: visible; padding: 20px;">
+            This is an example of overflow hidden. The content that exceeds the box will not be visible.
+            .
+        </div>
+        <div style="width: 1000px; height: 100px; border: 1px solid black; overflow: scroll;padding: 20px;">
+            
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+             This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+             This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+             This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar. This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+            This is an example of overflow scroll. The content that exceeds the box will be visible with a scroll bar.
+            
+        </div>
+        <div style="width: 1000px; height: 100px; border: 1px solid black; overflow: auto;padding: 20px;">
+            This is an example of overflow auto. The content that exceeds the box will be visible with a scroll bar if necessary.
+        </div>
+
+
+</body>
+</html>

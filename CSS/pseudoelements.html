@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO ELEMENTS</title>
+</head>
+<body>
+    <P>Pseudo elements in css</P>
+<style>/* pseudo elements are used to style specific parts of an element. */
+/* example of pseudo elements is ::before, ::after, ::first-letter, ::first-line etc. */    
+/* example of ::before pseudo element */
+p::before {
+    content: "Before ";
+    color: blue;
+}
+/* example of ::after pseudo element */
+p::after {
+    content: " After";
+    color: green;
+}
+/* example of ::first-letter pseudo element */
+
+p::first-letter {
+    font-size: 200%;
+    color: red;
+}
+/* example of ::first-line pseudo element */    
+
+p::first-line {
+    font-weight: bold;
+    color: orange;
+}
+</style>
+
+</body>
+</html>

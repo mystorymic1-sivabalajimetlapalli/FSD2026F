@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css positions </title>
+</head>
+<body>
+    <h1>CSS Positions</h1>
+    <p>CSS positions property specifies the type of positioning method used for an element. It can take the following values:</p>
+    <ul>
+        <li><strong>static:</strong> The default position; the element is positioned according to the normal flow of the document.</li>
+        <li><strong>relative:</strong> The element is positioned relative to its normal position. It can be moved using top, right, bottom, and left properties.</li>
+        <li><strong>absolute:</strong> The element is positioned relative to its nearest positioned ancestor (not static). If there is no such ancestor, it will be positioned relative to the initial containing block (usually the viewport).</li>
+        <li><strong>fixed:</strong> The element is positioned relative to the viewport and does not move when scrolled.</li>
+        <li><strong>sticky:</strong> The element is treated as relative until it crosses a specified threshold, at which point it becomes fixed.</li>
+    </ul>   
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #360404;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #ff0000;
+        }
+         ul {
+            color: #0000ff;
+        }
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .fixed {
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: lightyellow;
+            padding: 10px;
+        }
+    </style>
+    <div class="relative">This is a relative positioned element.</div>
+    <div class="absolute">This is an absolute positioned element.</div>
+    <div class="fixed">This is a fixed positioned element.</div>
+    <div class="sticky">This is a sticky positioned element.</div>
+    
+</body>
+</html>

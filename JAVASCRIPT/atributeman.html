@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Manipulation</title>
+    <style>
+        .myClass {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Attribute Manipulation</h2>
+    <p id="demo">ramu</p>
+    <button type="button" onclick="myfunc()">Click Me</button>
+ 
+    <script>
+       function myfunc() {  
+            alert("Hello balaji!");
+            document.getElementById("demo").innerHTML = "Hello World!";
+            document.getElementById("demo").setAttribute("class", "myClass");
+        }
+    </script>
+
+</body>
+</html>
